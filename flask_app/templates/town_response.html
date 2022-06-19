@@ -1,0 +1,12 @@
+
+
+{% for row in towns_data %}
+    <tr>
+        <td data-name="Premise Id" class="Premise ID" data-type="text" data-pk="{{row.id}}">{{row.PREMISE_ID}}</td>
+        <td data-name="Owner Name" class="Owner Names" data-type="text" data-pk="{{row.id}}">{{row.ADDR1}}</td>
+        <td data-name="Street Address" class="Street Address" data-type="text" data-pk="{{row.id}}">{{row.ADDR2}}</td>
+        <td data-name="town Name" class="town Name" data-type="text" data-pk="{{row.id}}">{{row.ADDR3}}</td>
+        <td data-name="Postal Code" class="Postal Code" data-type="text" data-pk="{{row.id}}">{{row.ADDR4}}</td>
+        <td data-name="Town Name" class="Town Name" data-type="text" data-pk="{{row.id}}">{{row.PREMISE_TOWN}}</td>
+    </tr>
+{% endfor %}

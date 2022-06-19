@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block body  %}
+<h1 class="text-light">TownShip</h1>
+
+    <SELECT name="town_name" style="font-family:verdana">
+      {% for town in towns %}
+        <OPTION value={{town}}>{{town[0]}}</OPTION>
+        
+      {% endfor %}
+      </SELECT>
+      <br/>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-auto">Column</div>
+          <div class="col-md-auto">Column</div>
+          <div class="w-100"></div>
+          <div class="col-md-auto">Column</div>
+          <div class="col-md-auto">Column</div>
+        </div>
+      </div>
+{% endblock %}
